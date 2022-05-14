@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="@dimen/fragment_vertical_margin"
+        android:background="@color/background_item_shoe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_distance_lf"
+            android:text="@string/item_name_field"
+            app:layout_constraintStart_toEndOf="@+id/name_label"
+            app:layout_constraintTop_toTopOf="@+id/name_label" />
+
+        <TextView
+            android:id="@+id/company"
+            style="@style/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_distance_lf"
+            android:text="@string/company_field"
+            app:layout_constraintStart_toEndOf="@+id/company_label"
+            app:layout_constraintTop_toTopOf="@+id/company_label" />
+
+        <TextView
+            android:id="@+id/size"
+            style="@style/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_distance_lf"
+            android:text="@string/item_size_field"
+            app:layout_constraintStart_toEndOf="@+id/size_label"
+            app:layout_constraintTop_toTopOf="@+id/size_label" />
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_distance_lf"
+            android:text="@string/item_description_field"
+            app:layout_constraintStart_toEndOf="@+id/description_label"
+            app:layout_constraintTop_toTopOf="@+id/description_label" />
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fragment_horizontal_margin"
+            android:layout_marginTop="@dimen/fragment_vertical_margin"
+            android:text="@string/item_name_label"
+            android:textColor="@color/label_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/size_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_distance_ll"
+            android:text="@string/item_size_label"
+            android:textColor="@color/label_color"
+            app:layout_constraintStart_toEndOf="@+id/company"
+            app:layout_constraintTop_toTopOf="@+id/company" />
+
+        <TextView
+            android:id="@+id/company_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_distance_ll"
+            android:gravity="center"
+            android:text="@string/company_label"
+            android:textColor="@color/label_color"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/fragment_vertical_margin"
+            android:text="@string/item_description_label"
+            android:textColor="@color/label_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/name_label"
+            app:layout_constraintTop_toBottomOf="@+id/name_label" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

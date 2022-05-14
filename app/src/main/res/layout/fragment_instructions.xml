@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.InstructionsFragment">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            style="@style/login_centralized_elements"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginStart="@dimen/fragment_horizontal_margin"
+            android:layout_marginEnd="@dimen/fragment_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            style="@style/login_centralized_elements"
+            android:text="@string/start" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

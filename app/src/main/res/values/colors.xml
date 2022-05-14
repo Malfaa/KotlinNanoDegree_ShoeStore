@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#008DB1</color><!--#D81B60-->
+    <color name="black">#000000</color>
+
+    <color name="background_item_shoe">#EDECEC</color>
+
+    <color name="label_color">#616161</color>
+
+</resources>

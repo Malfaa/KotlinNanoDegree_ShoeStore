@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.viewmodels.ShoeListViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.ShoeDetailFragment">
+
+        <TextView
+            android:id="@+id/shoeNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/shoe_detail"
+            android:layout_marginStart="@dimen/fragment_horizontal_margin"
+            android:layout_marginTop="@dimen/distance_from_edit_texts"
+            android:text="@string/shoename_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/shoeNameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_vertical_margin"
+            android:ems="10"
+            android:hint="@string/shoename_field"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="@={viewModel.name}"
+            app:layout_constraintEnd_toEndOf="@+id/shoeNameTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/shoeNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/shoeNameTextView"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_from_edit_texts"
+            android:text="@string/cancel"
+            app:layout_constraintEnd_toEndOf="@+id/description_edit_text"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="@+id/description_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/description_edit_text" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/cancel"
+            app:layout_constraintEnd_toEndOf="@+id/description_edit_text"
+            app:layout_constraintHorizontal_bias="0.939"
+            app:layout_constraintStart_toEndOf="@+id/cancel" />
+
+        <TextView
+            android:id="@+id/shoesize_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_from_edit_texts"
+            android:text="@string/shoesize_label"
+            style="@style/shoe_detail"
+            app:layout_constraintEnd_toEndOf="@+id/company_text_view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/company_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/company_edit_text" />
+
+        <EditText
+            android:id="@+id/shoeSize_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_vertical_margin"
+            android:ems="10"
+            android:hint="@string/shoesize_field"
+            android:importantForAutofill="no"
+            android:inputType="number|numberDecimal"
+            android:text="@={viewModel.size}"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/company_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/company_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/shoesize_text_view"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/company_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_from_edit_texts"
+            android:text="@string/company_label"
+            style="@style/shoe_detail"
+            app:layout_constraintEnd_toEndOf="@+id/shoeNameTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/shoeNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/shoeNameEdit" />
+
+        <EditText
+            android:id="@+id/company_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_vertical_margin"
+            android:ems="10"
+            android:hint="@string/company_field"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:text="@={viewModel.company}"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/shoeNameEdit"
+            app:layout_constraintStart_toStartOf="@+id/shoeNameEdit"
+            app:layout_constraintTop_toBottomOf="@+id/company_text_view"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/description_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_from_edit_texts"
+            android:text="@string/shoedescription_label"
+            style="@style/shoe_detail"
+            app:layout_constraintEnd_toEndOf="@+id/shoesize_text_view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/shoesize_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/shoeSize_edit_text" />
+
+        <EditText
+            android:id="@+id/description_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fragment_horizontal_margin"
+            android:layout_marginTop="@dimen/fragment_vertical_margin"
+            android:layout_marginEnd="@dimen/fragment_horizontal_margin"
+            android:ems="10"
+            android:text="@={viewModel.description}"
+            android:hint="@string/shoedescription_field"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/shoeSize_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/shoeSize_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/description_text_view"
+            tools:ignore="LabelFor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

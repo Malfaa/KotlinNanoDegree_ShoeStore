@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.WelcomeScreenFragment">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            style="@style/welcome_text"
+            android:textSize="24sp"
+            android:text="@string/welcome" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/welcome_text"
+            android:textSize="20sp"
+            android:text="@string/welcome_description" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            style="@style/login_centralized_elements"
+            android:text="@string/next" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

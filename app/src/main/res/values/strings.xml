@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- Strings related to login screen -->
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!-- Strings related to welcome screen -->
+    <string name="welcome">"Welcome!"</string>
+    <string name="welcome_description">"This app is an Shoe Store! Feel free to add all the shoes that you want!"</string>
+    <string name="next">Next</string>
+    <!-- Strings related to instructions screen -->
+    <string name="instructions">
+        In the next section, you will find shoes to add into your inventory. Fell free to add them
+        by clicking in the + on the bottom-right side.
+    </string>
+    <string name="start">Start</string>
+
+    <!-- Strings related to shoe list screen -->
+    <string name="detail">Shoe Detail</string>
+    <string name="list">List of Shoes</string>
+
+    <!-- Strings related to shoe detail screen -->
+    <string name="shoename_label">Shoe Name:</string>
+    <string name="company_label">Company:</string>
+    <string name="shoesize_label">Shoe Size:</string>
+    <string name="shoedescription_label">Shoe Description:</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <string name="shoename_field">Vans</string>
+    <string name="shoesize_field">12</string>
+    <string name="company_field">Amazon</string>
+    <string name="shoedescription_field">Very comfortable and lightweight!</string>
+
+
+    <!-- Strings related to main activity screen -->
+    <string name="logout">Logout</string>
+
+    <!-- Shoe Item -->
+    <string name="item_name_label">Shoe:</string>
+    <string name="item_size_label">Size:</string>
+    <string name="item_company_label">Company:</string>
+    <string name="item_description_label">Description:</string>
+
+    <string name="item_name_field">shoe</string>
+    <string name="item_size_field">1.1</string>
+    <string name="item_company_field">company</string>
+    <string name="item_description_field">description</string>
+</resources>
