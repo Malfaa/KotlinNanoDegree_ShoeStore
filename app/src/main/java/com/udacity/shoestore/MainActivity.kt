@@ -15,15 +15,17 @@ import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
 
+    private val appBarConfiguration by lazy {
+        AppBarConfiguration(navController.graph)
+    }
+
     private val navController by lazy {
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.navHostFragment) as NavHostFragment
         navHostFragment.navController
     }
 
-    private val appBarConfiguration by lazy {
-        AppBarConfiguration(navController.graph)
-    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,8 +44,3 @@ class MainActivity : AppCompatActivity() {
                 || super.onSupportNavigateUp()
     }
 }
-
-// TODO: colocar o shoedetail no shoelist
-// TODO: colocar appbarconfiguration
-// TODO: add logout menu 
-// TODO: arrumar as ui's dos xmls

@@ -26,7 +26,7 @@ class ShoeListViewModel : ViewModel() {
 
     }
 
-    fun verifiesIfTheFieldsAreEmpty():Boolean{
+    private fun verifiesIfTheFieldsAreEmpty():Boolean{
         return !(name.isBlank() || size.isBlank() || company.isBlank() || description.isBlank())
     }
 
