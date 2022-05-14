@@ -1,5 +1,6 @@
 package com.udacity.shoestore.viewmodels
 
+import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -18,8 +19,15 @@ class ShoeListViewModel : ViewModel() {
     var description:String = ""
 
     fun addingShoeToTheList(){
-        listOfShoes.add(Shoe(name,size.toDouble(),company, description))
-        _shoeList.value = listOfShoes
+        if (verifiesIfTheFieldsAreEmpty()){
+            listOfShoes.add(Shoe(name,size.toDouble(),company, description))
+            _shoeList.value = listOfShoes
+        }
+
+    }
+
+    fun verifiesIfTheFieldsAreEmpty():Boolean{
+        return !(name.isBlank() || size.isBlank() || company.isBlank() || description.isBlank())
     }
 
     fun cleaningFields(){
