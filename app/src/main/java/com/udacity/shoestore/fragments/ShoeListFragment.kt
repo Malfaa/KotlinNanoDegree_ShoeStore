@@ -25,7 +25,7 @@ class ShoeListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.shoe_list_fragment, container, false)
+        binding = ShoeListFragmentBinding.inflate(inflater, container, false)
 
         binding.lifecycleOwner = viewLifecycleOwner
 
@@ -84,8 +84,7 @@ class ShoeListFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
-            R.id.logout ->
-                findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToLoginFragment())
+            R.id.logout -> findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToLoginFragment())
         }
         return super.onOptionsItemSelected(item)
     }

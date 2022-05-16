@@ -53,8 +53,10 @@
             app:destination="@id/shoeDetailFragment" />
         <action
             android:id="@+id/action_shoeListFragment_to_loginFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
             app:destination="@id/loginFragment" />
-
 
     </fragment>
 </navigation>

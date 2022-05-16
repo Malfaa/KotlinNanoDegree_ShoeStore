@@ -7,6 +7,10 @@
 
     </data>
 
+<!-- Constraint Layout was used here primarily because of the
+  positioning of the whole components, letting more
+  "central|bottom" was the plan, so for the design i thought
+  that the Constraint Layout was the best option -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -60,6 +64,8 @@
             style="@style/login_centralized_elements"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
+            android:paddingStart="@dimen/button_padding"
+            android:paddingEnd="@dimen/button_padding"
             android:background="@color/colorPrimary"
             android:layout_marginBottom="@dimen/distance_login"
             android:text="@string/action_sign_in"

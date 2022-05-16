@@ -7,6 +7,8 @@
 
     </data>
 
+<!-- Here in the activity layout, the design is very linear
+   , so for this structure, Linear Layout suits better -->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:orientation="vertical"

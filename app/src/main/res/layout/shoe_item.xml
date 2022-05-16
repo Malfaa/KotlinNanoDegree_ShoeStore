@@ -7,6 +7,10 @@
 
     </data>
 
+    <!-- The design of this layout has more complexity compared to
+       the ones that is using Linear Layout, for this structure
+       positioning, Constraint makes more sense because of the
+       versatility that provides -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_marginTop="@dimen/fragment_vertical_margin"
         android:background="@color/background_item_shoe"

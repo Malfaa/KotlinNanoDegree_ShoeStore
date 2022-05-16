@@ -19,7 +19,7 @@ class WelcomeScreenFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_welcome_screen, container, false)
+        binding = FragmentWelcomeScreenBinding.inflate(inflater, container, false)
 
         (activity as AppCompatActivity).supportActionBar?.title = "Welcome!"
 

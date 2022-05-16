@@ -30,11 +30,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // inflate
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // action bar
         setSupportActionBar(binding.toolbar)
         setupActionBarWithNavController(navController, appBarConfiguration)
     }

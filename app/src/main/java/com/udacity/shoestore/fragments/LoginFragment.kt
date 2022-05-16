@@ -19,7 +19,7 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.login_fragment, container, false)
+        binding = LoginFragmentBinding.inflate(inflater, container, false)
 
         (activity as AppCompatActivity).supportActionBar?.title = "Login"
 

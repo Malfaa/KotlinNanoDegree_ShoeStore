@@ -9,6 +9,9 @@
             type="com.udacity.shoestore.viewmodels.ShoeListViewModel" />
     </data>
 
+<!-- ConstraintLayout is used here because of the
+components quantity, for more complex designs,
+constraint have better usage.   -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

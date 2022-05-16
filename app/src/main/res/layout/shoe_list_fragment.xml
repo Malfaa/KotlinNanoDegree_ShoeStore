@@ -7,6 +7,9 @@
 
     </data>
 
+<!-- In this layout, Linear could be used too because of the structure
+   used, but for aesthetics reasons adopted, using less code to make,
+   for example, fab over the ScrollView, Constraint was the best option-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

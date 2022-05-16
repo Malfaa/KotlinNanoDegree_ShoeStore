@@ -6,6 +6,9 @@
 
     </data>
 
+    <!-- Linear Layout is used because it is a simple design,
+    making the Constraint Layout not the best to be used in this
+    situation -->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:orientation="vertical"
         android:layout_width="match_parent"

@@ -20,7 +20,7 @@ class InstructionsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_instructions, container, false)
+        binding = FragmentInstructionsBinding.inflate(inflater, container, false)
 
         (activity as AppCompatActivity).supportActionBar?.title = "Instructions"
 
